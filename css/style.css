@@ -906,7 +906,7 @@ body {
 }
 @media (max-width: 767px) {
   .menu {
-    padding-top: 113.17px;
+    padding-top: 95.78px;
   }
   .menu-btn span {
     width: 14.39px;
@@ -1223,58 +1223,6 @@ body {
      object-fit: cover;
 }
 
-.play-button {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 100%;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.play-button:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 15px solid transparent;
-  border-left: 30px solid white;
-  border-bottom: 15px solid transparent;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-.play-button::after {
-  content: "";
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.play-button.paus::after {
-  border: none;
-  width: 15px;
-  height: 30px;
-  background-color: white;
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
-}
-.play-button.paus:before {
-  border: none;
-  width: 15px;
-  height: 30px;
-  background-color: white;
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
-}
-
 .intro-texts-blocks {
   max-width: 693px;
   width: 100%;
@@ -1297,7 +1245,8 @@ body {
   margin-bottom: 12px;
 }
 
-.intro-texts-text {
+.intro-texts-text-block, .intro-texts-text-box-title,
+.intro-texts-text-two, .intro-texts-text {
   color: rgb(59, 59, 59);
   font-size: 20px;
   font-weight: 400;
@@ -1324,6 +1273,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro-texts-text-two {
+  font-style: italic;
+  margin-left: 43px;
+  margin-right: 20px;
+}
+
+.intro-texts-text-block {
+  background: rgb(230, 230, 230);
+  padding: 20px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.intro-texts-text-block p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.intro-texts-text-box {
+  margin-bottom: 30px;
+}
+.intro-texts-text-box p {
+  margin-bottom: 0 !important;
+}
+
+.intro-texts-text-box-title {
+  font-weight: 700;
 }
 
 .intro-form {

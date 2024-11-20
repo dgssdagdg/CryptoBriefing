@@ -28,18 +28,6 @@ document.addEventListener('click', function(e) {
     }
 })
 
-const playButton = document.getElementById('play-button');
-const audioPlayer = document.getElementById('audio-player');
-
-playButton.addEventListener('click', () => {
-    if (audioPlayer.paused) {
-        audioPlayer.play();
-        playButton.classList.add('paus');
-    } else {
-        audioPlayer.pause();
-        playButton.classList.remove('paus');
-    }
-});
 
 const header = document.querySelector('.header');
 let lastScrollTop = 0;
